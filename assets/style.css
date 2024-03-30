@@ -8,8 +8,8 @@
   background-image: url("mtrainer.jpeg");
       background-size: cover;
       background-position: center;
-    /* width: 100vw;
-    height: 100vh; */
+     width: 100vw;
+     height: 100vh;
  }
 
  
@@ -18,7 +18,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      border: 1px solid yellow; 
  }
 
  .photocontainer {
@@ -98,22 +97,44 @@ ul {
 
 main {
   background-color: rgb(201, 185, 164);
-  color: rgb(22, 54, 22) ;
+  color: antiquewhite ;
   font-family: fantasy;
 }
 
 h2 {
-    border: 1px solid transparent;
-    padding: 2px;
-    border-image: url(border.png) 30 round;
+  padding: 10px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+div.hut {
+  background-image: url(./hut.jpeg);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+div.hut a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.hut p a {
+  text-decoration: none;
+  color: rgb(22, 54, 22)
+}
+
+
 p {
+  font-size: 20px;
   border-image: round;
   background-color:antiquewhite;
-  border-style: dotted;
-  border-color: green;
+  color: rgb(22, 54, 22);
   padding: 10px;
+  
+}
+
+.br {
   
 }
 

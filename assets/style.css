@@ -101,12 +101,22 @@ main {
   font-family: fantasy;
 }
 
-h2 {
-  padding: 10px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+.photodisplay {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: center;
+}
+
+.picsbody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 div.hut {
+  display: flow-root;
   background-image: url(./hut.jpeg);
   background-size: cover;
   width: 300px;
@@ -121,9 +131,82 @@ div.hut a {
 
 .hut p a {
   text-decoration: none;
-  color: rgb(22, 54, 22)
+  color: rgb(22, 54, 22);
+  font-size: medium;
 }
 
+
+div.goatlake {
+  display:flow-root;
+  background-image: url(./goat-lake.jpeg);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+div.goatlake a{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.goatlake p a {
+  text-decoration: none;
+  color: rgb(22, 54, 22);
+  font-size: medium;
+}
+
+div.mossytree {
+  display: flow-root;
+  background-image: url(./mossy\ tree.jpeg);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+div.mossytree a{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.mossytree p a {
+  text-decoration: none;
+  color: rgb(22, 54, 22);
+  font-size: medium;
+}
+
+div.vietnam {
+  display: flow-root;
+  background-image: url(./vietnam.jpeg);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+div.vietnam a{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.vietnam p a {
+  text-decoration: none;
+  color: rgb(22, 54, 22);
+  font-size: medium;
+}
+
+.br {
+  
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-top: 30px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 
 p {
   font-size: 20px;
@@ -131,33 +214,41 @@ p {
   background-color:antiquewhite;
   color: rgb(22, 54, 22);
   padding: 10px;
-  
 }
 
-.br {
-  
+button {
+  font-family: fantasy;
+  font-size: medium;
+  border-radius: 50px;
+  background-color: rgb(201, 185, 164);
+  color: rgb(22, 54, 22);
+  padding: 1rem;
+  margin: 1rem;
 }
 
 footer {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   font-family: fantasy;
   background-color: rgb(22, 54, 22);
   color: rgb(201, 185, 164);
-  gap: 50px;
+  gap: 10rem;
+  padding: 1rem;
+  font-size: larger;
 }
 
 h3 {
-  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 }
 
 .contactinfo {
   display: flex;
-  gap: 20px;
+  justify-content: space-evenly;
+  gap: 14rem;
 }
 
-button {
-  margin: 15px;
-}
 
 
 /* text-align: center;

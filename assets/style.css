@@ -4,6 +4,7 @@
     
  }
 
+ /* Set my main picture as a background image */
  body {
   background-image: url("mtrainer.jpeg");
       background-size: cover;
@@ -12,24 +13,26 @@
      height: 100vh;
  }
 
- 
+ /* Entire top photo and all the content that lays on top of it */
 .mtrainer {
       width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center;
  }
 
+ /* My profile photo and portfolio name are in here together for positioning */
  .photocontainer {
   display:flex;
   gap: 5rem;
   flex-wrap: wrap;
  }
 
+ /* the width from the left side of the page */
  .profilepic {
   width: 15rem;
  }
 
+ /* The photo of me at the top */
  .selfie {
    display: flex;
    height: 300px;
@@ -38,6 +41,7 @@
    padding: 3rem;
 }
 
+/* Stlying for my name at the top */
 .myname {
   display: block;
   font-family: fantasy;
@@ -47,11 +51,13 @@
   min-width: 20rem;
 }
 
+/* Postioning for the portfolio name */
 #portfolio {
   display: flex;
   align-items: flex-end;
 }
 
+/* Styling for the portfolio name */
 #portfolio span {
    font-family: fantasy;
    font-size: 70px;
@@ -63,8 +69,9 @@
    min-width: 10rem;
 }
 
+/* top area that includes my name and the links */
 .title-area {
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,17 +79,20 @@
   flex-wrap: wrap;
 }
 
+/* Getting rid of the underline and bullet points as well as tunring the links from blue to black */
 nav ul li a {
   list-style-type: none;
   text-decoration: none;
   color: black;
 }
 
+/* The links at the top */
 .nav {
   max-width: 50rem;
   min-width: 20rem;
 }
 
+/*Styling for the links at the top  */
 ul {
    display: flex;
    font-family: fantasy;
@@ -95,19 +105,38 @@ ul {
    width: 100%;
 }
 
+/* Styling for the main section */
 main {
   background-color: rgb(201, 185, 164);
   color: antiquewhite ;
   font-family: fantasy;
 }
 
+/* Styling for all h2 tags*/
+h2 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-top: 30px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* Styling for about me paragraph */
+.aboutmeparagraph {
+  font-size: 1rem;
+  background-color:antiquewhite;
+  color: rgb(22, 54, 22);
+  padding: 10px;
+}
+
+/* Layout for photos in the middle */
 .photodisplay {
   display: flex;
   flex-direction: column;
-  padding: 5px;
   justify-content: center;
 }
 
+/* Styling for photos in the middle */
 .picsbody {
   display: inline-flex;
   background-color: antiquewhite;
@@ -118,6 +147,7 @@ main {
   gap: 2rem;
 }
 
+/* Photo of sunset with hut */
 div.hut {
   display: flow-root;
   background-image: url(./hut.jpeg);
@@ -126,12 +156,14 @@ div.hut {
   height: 400px;
 }
 
+/*Lay out for hut pic*/
 div.hut a {
   display: block;
   height: 100%;
   width: 100%;
 }
 
+/* Styling for link to hut website */
 .hut p a {
   text-decoration: none;
   display: flex;
@@ -139,9 +171,10 @@ div.hut a {
   background-color: antiquewhite;
   color: rgb(22, 54, 22);
   font-size: medium;
+  padding: 3px;
 }
 
-
+/* Photo of sunset with lake */
 div.goatlake {
   display:flow-root;
   background-image: url(./goat-lake.jpeg);
@@ -150,12 +183,14 @@ div.goatlake {
   height: 400px;
 }
 
-div.goatlake a{
+/* Lay out for lake pic */
+div.goatlake a {
   display: block;
   height: 100%;
   width: 100%;
 }
 
+/* Styling for link to lake website */
 .goatlake p a {
   text-decoration: none;
   display: flex;
@@ -163,8 +198,10 @@ div.goatlake a{
   background-color: antiquewhite;
   color: rgb(22, 54, 22);
   font-size: medium;
+  padding: 3px;
 }
 
+/* Photo of mossy tree */
 div.mossytree {
   display: flow-root;
   background-image: url(./mossy\ tree.jpeg);
@@ -173,12 +210,14 @@ div.mossytree {
   height: 400px;
 }
 
-div.mossytree a{
+/* Lay out for mossy tree photo */
+div.mossytree a {
   display: block;
   height: 100%;
   width: 100%;
 }
 
+/* Styling for link to mossy tree */
 .mossytree p a {
   text-decoration: none;
   display: flex;
@@ -186,8 +225,10 @@ div.mossytree a{
   background-color: antiquewhite;
   color: rgb(22, 54, 22);
   font-size: medium;
+  padding: 3px;
 }
 
+/* Photo of boat in Vietnam */
 div.vietnam {
   display: flow-root;
   background-image: url(./vietnam.jpeg);
@@ -196,12 +237,14 @@ div.vietnam {
   height: 400px;
 }
 
-div.vietnam a{
+/* Lay out for Vietnam photo */
+div.vietnam a {
   display: block;
   height: 100%;
   width: 100%;
 }
 
+/* Styling for Vitenam Link */
 .vietnam p a {
   text-decoration: none;
   display: flex;
@@ -209,32 +252,21 @@ div.vietnam a{
   background-color: antiquewhite;
   color: rgb(22, 54, 22);
   font-size: medium;
+  padding: 3px;
 }
 
+/* Added a breakline between photo area and resume area */
 .br {
   
 }
 
-h2 {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  padding-top: 30px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.aboutmeparagraph {
-  font-size: 1rem;
-  background-color:antiquewhite;
-  color: rgb(22, 54, 22);
-  padding: 10px;
-}
-
+/* Layout and color for resume button background */
 .buttonbackground {
   display: flex;
   background-color: antiquewhite;
 }
 
+/* Stlying for button area */
 button {
   font-family: fantasy;
   font-size: large;
@@ -245,11 +277,13 @@ button {
   margin: 1rem;
 }
 
+/*fixed link styling */
 button a {
   text-decoration: none;
   color: rgb(22, 54, 22);
 }
 
+/* Styling and layout for footer links and contact me */
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -262,11 +296,13 @@ footer {
   font-size: larger;
 }
 
+/* Styling specific for contact me */
 h3 {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 }
 
+/* Styling for links at bottom */
 .contactstyling {
   display: flex;
   justify-content: space-between;
@@ -274,16 +310,19 @@ h3 {
   text-decoration: none;
 }
 
+/* Styling for instagram link */
 .instagram p a {
   color: rgb(201, 185, 164);
   text-decoration: none;
 }
 
+/* Styling for linkedin link */
 .linkedin p a {
   color: rgb(201, 185, 164);
   text-decoration: none;
 }
 
+/* Media screen CSS */
 @media screen and (max-width: 430px) {
   body {
   display: grid;

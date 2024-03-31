@@ -7,6 +7,6 @@ This is a page that I can use for my future portfolio work as I create more proj
 ![This is a screenshot of the top of my profile ](./assets/Screenshot%202024-03-31%20at%2011.23.58%20AM.png)
 
 ##Links
-https://github.com/magtron3030/semantic-html
+https://magtron3030.github.io/portfolio.html/
 
-https://magtron3030.github.io/semantic-html/ 
+https://github.com/magtron3030/portfolio.html

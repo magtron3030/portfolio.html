@@ -54,7 +54,7 @@
 
 #portfolio span {
    font-family: fantasy;
-   font-size: 50px;
+   font-size: 70px;
    font-style: initial;
    color: rgb(201, 185, 164);
    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -109,7 +109,10 @@ main {
 }
 
 .picsbody {
-  display: flex;
+  display: inline-flex;
+  background-color: antiquewhite;
+  background-size: cover;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
@@ -119,8 +122,8 @@ div.hut {
   display: flow-root;
   background-image: url(./hut.jpeg);
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 div.hut a {
@@ -131,6 +134,9 @@ div.hut a {
 
 .hut p a {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
   color: rgb(22, 54, 22);
   font-size: medium;
 }
@@ -140,8 +146,8 @@ div.goatlake {
   display:flow-root;
   background-image: url(./goat-lake.jpeg);
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 div.goatlake a{
@@ -152,6 +158,9 @@ div.goatlake a{
 
 .goatlake p a {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
   color: rgb(22, 54, 22);
   font-size: medium;
 }
@@ -160,8 +169,8 @@ div.mossytree {
   display: flow-root;
   background-image: url(./mossy\ tree.jpeg);
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 div.mossytree a{
@@ -172,6 +181,9 @@ div.mossytree a{
 
 .mossytree p a {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
   color: rgb(22, 54, 22);
   font-size: medium;
 }
@@ -180,8 +192,8 @@ div.vietnam {
   display: flow-root;
   background-image: url(./vietnam.jpeg);
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 div.vietnam a{
@@ -192,6 +204,9 @@ div.vietnam a{
 
 .vietnam p a {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
   color: rgb(22, 54, 22);
   font-size: medium;
 }
@@ -208,22 +223,31 @@ h2 {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-p {
-  font-size: 20px;
-  border-image: round;
+.aboutmeparagraph {
+  font-size: 1rem;
   background-color:antiquewhite;
   color: rgb(22, 54, 22);
   padding: 10px;
 }
 
+.buttonbackground {
+  display: flex;
+  background-color: antiquewhite;
+}
+
 button {
   font-family: fantasy;
-  font-size: medium;
+  font-size: large;
   border-radius: 50px;
   background-color: rgb(201, 185, 164);
   color: rgb(22, 54, 22);
   padding: 1rem;
   margin: 1rem;
+}
+
+button a {
+  text-decoration: none;
+  color: rgb(22, 54, 22);
 }
 
 footer {
@@ -243,16 +267,89 @@ h3 {
 
 }
 
-.contactinfo {
+.contactstyling {
   display: flex;
-  justify-content: space-evenly;
-  gap: 14rem;
+  justify-content: space-between;
+  gap: 4rem;
+  text-decoration: none;
 }
 
+.instagram p a {
+  color: rgb(201, 185, 164);
+  text-decoration: none;
+}
 
+.linkedin p a {
+  color: rgb(201, 185, 164);
+  text-decoration: none;
+}
 
-/* text-align: center;
+@media screen and (max-width: 430px) {
+  body {
+  display: grid;
+  }
+  .myname {
+font-size: 40px;
+  }
+  ul {
+    font-size: 15px;
+  }
+  #portfolio span {
+    font-size: 35px;
+    display: flex;
+    margin-left: 20px;
+  }
+  .aboutmeparagraph {
+   width: 63%;
+   margin: 5px;
+  }
+  .picsbody {
+    display: -webkit-box;
+  }
+  .contactstyling {
+   display: block;
+  }
+  footer {
+    row-gap: normal;
+  }
+}
 
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row; */
+@media screen and (max-width: 540px) {
+  .myname {
+    font-size: 50px;
+  }
+  #portfolio span {
+    font-size: 35px;
+    display: flex;
+    margin-left: 20px;
+  }
+  .aboutmeparagraph {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactstyling {
+    display: block;
+  }
+  footer {
+    row-gap: normal;
+  }
+  .aboutmeparagraph {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 943px) {
+  .myname {
+    font-size: 50px; 
+  }
+  #portfolio span {
+    font-size: 35px;
+    display: flex;
+    margin-left: 20px;
+  }
+  .contactstyling {
+    font-size: medium;
+  }
+}
